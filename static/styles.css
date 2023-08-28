@@ -1,0 +1,65 @@
+*{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+}
+@keyframes spin{
+    0%{
+        background: linear-gradient(45deg,rgb(226, 118, 56),rgb(177, 98, 160));
+    }
+    100%{
+        background: linear-gradient(45deg,rgb(224, 102, 188),rgb(219, 116, 47));
+    }
+}
+h1{
+    color: #D27685;
+    font-weight: bolder;
+    text-decoration: underline;
+    font-size: 500;
+    font-family: Comic Sans MS;
+    text-align: center;
+}
+section {
+    position: absolute;
+    height: 50vh;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: .4em .4em 2em rgb(114, 113, 113);
+    margin-top: 10%;
+    margin-left: 25%;
+    background-color:  rgb(250, 245, 241);
+    animation: spin 1s linear infinite ;
+    border-radius: 10px;
+}
+img {
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(45deg,rgb(207, 105, 37),rgb(204, 56, 192));
+    padding: 5px;
+    cursor: pointer;
+}
+img:hover{
+    background: linear-gradient(45deg,rgb(35, 161, 134), rgb(207, 103, 43));
+}
+
+ .button{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: #fff;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    padding: 9px 15px;
+    background: linear-gradient(45deg,rgb(199, 49, 49),rgb(197, 107, 48));
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 0.7s ease;
+}
